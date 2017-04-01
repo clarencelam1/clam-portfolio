@@ -4,10 +4,21 @@
 
 {% block content %}
 
-<div class="container text-center">
+<div class="container-fluid text-left">
   <h1>Welcome to my Portfolio!</h1>
-  <a type="button" class="btn btn-lg btn-default" href="https://www.linkedin.com/in/clarence-lam-42568463"><span class="glyphicon glyphicon-user"></span> Linkedin</a>
-  <a type="button" class="btn btn-lg btn-primary" href="https://github.com/clarencelam1/"><img src="{% static "hello/github-light.png" %}" alt="github"> Github</a>
-  <a type="button" class="btn btn-lg btn-primary" href="{% static "hello/resume.pdf "%}""> resume</a>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>About me:</h3>
+      <div class="btn-group-vertical" role="group">
+        <a type="button" class="btn btn-lg btn-default" href="https://www.linkedin.com/in/clarence-lam-42568463"><span class="glyphicon glyphicon-user"></span> Linkedin</a>
+        <a type="button" class="btn btn-lg btn-primary" href="https://github.com/clarencelam1/"><img src="{% static "hello/github-light.png" %}" alt="github"> GitHub</a>
+        <a type="button" class="btn btn-lg btn-primary" href="{% static "hello/blank.pdf "%}"> resume</a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h3>Interesting things:</h3>
+      <a type="button" class="btn btn-lg btn-default" href="http://jgthms.com/web-design-in-4-minutes/"> A guide for website design</a>
+    </div>
+  </div>
 </div>
 {% endblock %}
