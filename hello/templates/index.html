@@ -9,9 +9,16 @@
     <img src="{% static "hello/me.jpg" %}" alt="me">
     <h1>Hi, I'm Clarence.</h1>
   </div>
-  <div class="row">
-    <div class="col-xs-4">
-      <h3 class="text-nowrap">About me:</h3>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs nav-justified" role="tablist">
+    <li role="presentation" class="active"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">About Me</a></li>
+    <li role="presentation"><a href="#skills" aria-controls="skills" role="tab" data-toggle="tab">Skills</a></li>
+    <li role="presentation"><a href="#guides" aria-controls="guides" role="tab" data-toggle="tab">Guides</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane in active text-center" id="about">
       <div class="btn-group-vertical" role="group">
         <a type="button" class="btn btn-lg btn-default" href="https://www.linkedin.com/in/clarence-lam-42568463"><span class="glyphicon glyphicon-user"></span> Linkedin</a>
         <a type="button" class="btn btn-lg btn-primary" href="https://github.com/clarencelam1/"><img src="{% static "hello/github-light.png" %}" alt="github"> GitHub</a>
@@ -19,22 +26,40 @@
         <a type="button" class="btn btn-lg btn-danger"  href="https://www.youtube.com/user/n0gard"><span class="glyphicon glyphicon-play"></span> Youtube</a>
       </div>
     </div>
-    <h3 class="text-center">Guides and skills:</h3>
-    <div class="col-xs-4">
-      <a href="https://www.w3schools.com/html/" class="thumbnail">
-        <img class = "img-rounded" src="{% static "hello/wc3.png" %}" alt="WC3 school">
-      </a>
-      <a href="http://getbootstrap.com/" class="thumbnail">
-        <img class = "img-rounded" src="{% static "hello/bootstrap.png" %}" alt="Bootstrap">
-      </a>
+    <div role="tabpanel" class="tab-pane fade text-center" id="skills">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <a href="http://getbootstrap.com/">
+            <img class = "img-rounded" src="{% static "hello/bootstrap.png" %}" alt="Bootstrap">
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="http://rubyonrails.org/">
+            <img class = "img-rounded" src="{% static "hello/rails_logo.png" %}" alt="Ruby On Rails">
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="https://www.w3schools.com/html/">
+            <img class = "img-rounded" src="{% static "hello/wc3.png" %}" alt="WC3 school">
+          </a>
+        </li>
+      </ul>
+
     </div>
-    <div class="col-xs-4">
-      <a href="https://jquery.com/" class="thumbnail">
-        <img class = "img-rounded" src="{% static "hello/jQuery.png" %}" alt="jQuery">
-      </a>
-      <a href="http://jgthms.com/web-design-in-4-minutes/" class="thumbnail">
-        <img class = "img-rounded" src="{% static "hello/jt.jpg" %}" alt="Jermey Thomas">
-      </a>
+
+    <div role="tabpanel" class="tab-pane fade text-center" id="guides">
+      <ul class="list-group">
+        <li class="list-group-item">
+          <a href="http://guides.rubyonrails.org/">
+            <img class = "img-rounded" src="{% static "hello/rails_guide.gif" %}" alt="Ruby On Rails">
+          </a>
+        </li>
+        <li class="list-group-item">
+          <a href="http://jgthms.com/web-design-in-4-minutes/">
+            <img class = "img-rounded" src="{% static "hello/jt.png" %}" alt="Jermey Thomas">
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

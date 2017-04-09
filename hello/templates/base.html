@@ -8,8 +8,8 @@
   <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <style type="text/css">
     body {
-        background: #532f8c;
-        color: white;
+        background: white;
+        color: black;
         margin: 0 auto;
         max-width: 50em;
         font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -53,13 +53,22 @@
         max-width: 100%
     }
     .container-fluid{
-      min-width: 675px;
+        min-width: 675px;
     }
     .thumbnail {
-      background: #532f8c;
-      border-color: #532f8c;
+        background: #532f8c;
+        border-color: #532f8c;
     } 
-
+    .nav-tabs > li.active > a,
+    .nav-tabs > li.active > a:hover,
+    .nav-tabs > li.active > a:focus{
+        color: black;
+        background-color: #efefef;
+    } 
+    .list-group-item{
+        border-color: white;
+        border: 0px solid white
+    }
   </style>
 </head>
 <body>
