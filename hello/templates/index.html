@@ -15,16 +15,19 @@
     <li role="presentation"><a href="#skills" aria-controls="skills" role="tab" data-toggle="tab">Skills</a></li>
     <li role="presentation"><a href="#guides" aria-controls="guides" role="tab" data-toggle="tab">Guides</a></li>
   </ul>
-
   <!-- Tab panes -->
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane in active text-center" id="about">
-      <div class="btn-group-vertical" role="group">
-        <a type="button" class="btn btn-lg btn-default" href="https://www.linkedin.com/in/clarence-lam-42568463"><span class="glyphicon glyphicon-user"></span> Linkedin</a>
-        <a type="button" class="btn btn-lg btn-primary" href="https://github.com/clarencelam1/"><img src="{% static "hello/github-light.png" %}" alt="github"> GitHub</a>
-        <a type="button" class="btn btn-lg btn-primary" href="{% static "hello/resume.pdf "%}"><span class ="glyphicon glyphicon-list-alt"></span> Resume</a>
-        <a type="button" class="btn btn-lg btn-danger"  href="https://www.youtube.com/user/n0gard"><span class="glyphicon glyphicon-play"></span> Youtube</a>
-      </div>
+      <ul class="list-group">
+      <li class="list-group-item">
+        <div class="btn-group-vertical" role="group">
+          <a type="button" class="btn btn-lg btn-default" href="https://www.linkedin.com/in/clarence-lam-42568463"><span class="glyphicon glyphicon-user"></span> Linkedin</a>
+          <a type="button" class="btn btn-lg btn-primary" href="https://github.com/clarencelam1/"><img src="{% static "hello/github-light.png" %}" alt="github"> GitHub</a>
+          <a type="button" class="btn btn-lg btn-primary" href="{% static "hello/resume.pdf "%}"><span class ="glyphicon glyphicon-list-alt"></span> Resume</a>
+          <a type="button" class="btn btn-lg btn-danger"  href="https://www.youtube.com/user/n0gard"><span class="glyphicon glyphicon-play"></span> Youtube</a>
+        </div>
+        </li>
+      </ul>
     </div>
     <div role="tabpanel" class="tab-pane fade text-center" id="skills">
       <ul class="list-group">
@@ -44,9 +47,7 @@
           </a>
         </li>
       </ul>
-
     </div>
-
     <div role="tabpanel" class="tab-pane fade text-center" id="guides">
       <ul class="list-group">
         <li class="list-group-item">
